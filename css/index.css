@@ -118,7 +118,17 @@ body {
     background-color: #04AA6D;
     font-size: 12px;
     margin-top: 0%;
-    
+    padding: 2%;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+ .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 8%;
+        grid-gap: 5px;
+        
+    }
+    .main{
+        background-color: #15306b;
+    }
