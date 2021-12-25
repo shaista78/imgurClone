@@ -5,9 +5,10 @@ body {
 }
 
 .header {
-  background-image:url("https://64.media.tumblr.com/148c7d89d0ed8adffd2d07eb4c5c290c/5282aecb2f4bb669-40/s640x960/a087440c27eedffb8d098618308c7d564af47842.gifv");
+  background-image:url("https://i.makeagif.com/media/9-29-2015/Fbny_z.gif");
   padding: 30px;
-
+  /* transition: opacity .5s,box-shadow .4s; */
+  background-repeat:round;
    color: white;
 }
 .header h3{
@@ -20,7 +21,7 @@ body {
 }
 #navbar {
   overflow: hidden;
-  background-image:url("https://64.media.tumblr.com/148c7d89d0ed8adffd2d07eb4c5c290c/5282aecb2f4bb669-40/s640x960/a087440c27eedffb8d098618308c7d564af47842.gifv");
+  background-image:url("https://basicuse.net/var/plain_site/storage/images/media/images/articles/prog_lang/textile/html_css/animated_falling_snow_using_keyframes_in_css3/falling_snow_animation_in_action/265031-1-eng-GB/falling_snow_animation_in_action.gif");
 }
 .head-icon{
     font-size: 30px;
