@@ -19,6 +19,8 @@
             type="text"
             class="Search"
             placeholder="Images, #tags, @users oh my"
+            oninput="debounce(main,1000)"
+            id="query"
           />
         </div>
         <div class="head-div">
@@ -34,6 +36,10 @@
           </div>
         </div>
       </div>
+
+      <!-- Debouncing of Imgur -->
+      <div id="movies" class="display"></div>
+
       <h3>"Hello, is this the Krusty Krab?" "No, this is Imgur"</h3>
 
       <div>
@@ -42,8 +48,8 @@
           <div>MORE TAGS +</div>
         </div>
       </div>
-      <div class="head-div">
-        <div>
+      <!-- <div class="head-div"> -->
+        <!-- <div>
           <img
             src="https://i.imgur.com/YddstVb_d.jpg?maxwidth=150&shape=thumb&fidelity=high"
             alt=""
@@ -53,7 +59,7 @@
             <p>Board Games</p>
             <p>FEATURED . 3,885 Posta</p>
           </div>
-        </div>
+        </div> -->
         <div class="head-div">
             <div>
                 <img src="https://i.imgur.com/YddstVb_d.jpg?maxwidth=150&shape=thumb&fidelity=high" alt=""
@@ -120,76 +126,7 @@
                 </div>
             </div>
         </div>
-        <div>
-          <img
-            src="https://i.imgur.com/3UpdEpa_d.jpg?maxwidth=150&shape=thumb&fidelity=high"
-            alt=""
-          />
-          <div class="elemnt--bg" style="margin-top: -20px">
-            <p>Board Games</p>
-            <p>FEATURED . 3,885 Posta</p>
-          </div>
-        </div>
-        <div>
-          <img
-            src="https://i.imgur.com/zIGIQFa_d.jpg?maxwidth=110&shape=thumb&fidelity=high"
-            alt=""
-          />
-          <div class="elemnt--bg" style="margin-top: -20px">
-            <p>Board Games</p>
-            <p>FEATURED . 3,885 Posta</p>
-          </div>
-        </div>
-        <div>
-          <img
-            src="https://i.imgur.com/K4okPkw_d.jpg?maxwidth=150&shape=thumb&fidelity=high"
-            alt=""
-          />
-          <div class="elemnt--bg" style="margin-top: -20px">
-            <p>Board Games</p>
-            <p>FEATURED . 3,885 Posta</p>
-          </div>
-        </div>
-        <div>
-          <img
-            src="https://i.imgur.com/LCgAOxq_d.jpg?maxwidth=150&shape=thumb&fidelity=high"
-            alt=""
-          />
-          <div class="elemnt--bg" style="margin-top: -20px">
-            <p>Board Games</p>
-            <p>FEATURED . 3,885 Posta</p>
-          </div>
-        </div>
-        <div>
-          <img
-            src="https://i.imgur.com/3UpdEpa_d.jpg?maxwidth=110&shape=thumb&fidelity=high"
-            alt=""
-          />
-          <div class="elemnt--bg" style="margin-top: -20px">
-            <p>Board Games</p>
-            <p>FEATURED . 3,885 Posta</p>
-          </div>
-        </div>
-        <div>
-          <img
-            src="https://i.imgur.com/K4okPkw_d.jpg?maxwidth=110&shape=thumb&fidelity=high"
-            alt=""
-          />
-          <div class="elemnt--bg" style="margin-top: -20px">
-            <p>Board Games</p>
-            <p>FEATURED . 3,885 Posta</p>
-          </div>
-        </div>
-        <div>
-          <img
-            src="https://i.imgur.com/Gy6x3LC_d.jpg?maxwidth=100&shape=thumb&fidelity=high"
-            alt=""
-          />
-          <div class="elemnt--bg" style="margin-top: -20px">
-            <p>Board Games</p>
-            <p>FEATURED . 3,885 Posta</p>
-          </div>
-        </div>
+        
       </div>
       <div id="navbar">
         <div></div>
@@ -202,14 +139,30 @@
       </div>
     </div>
 
+    <footer class="footer foot">
+      <div>© 2021 Imgur, Inc</div>
+      <div>About</div>
+      <div>Terms</div>
+      <div>Privacy</div>
+      <div>Rules</div>
+      <div>Help</div>
+      <div>Emerald</div>
+      <div>Store</div>
+      <div>Advertise</div>
+      <div>Blog</div>
+      <div>Wellness</div>
+      <div>CGPA</div>
+      <div>API</div>
+      <div style="background-color:#474a51 ;width: 8%;text-align: center;">Get the API</div>
+  </footer>
+
     <div class="main">
       <div class="container"></div>
     </div>
 
-    <footer>
-
-    </footer>
+   
 
     <script src="../js/index.js"></script>
+    <script src="../js//debounce.js"></script>
   </body>
 </html>

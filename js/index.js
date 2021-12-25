@@ -1,3 +1,16 @@
+window.onscroll = function () { myFunction() };
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+ 
  async  function  Names(){
     let response = await fetch(`https://api.pexels.com/v1/curated?page=2&per_page=500`,{
         method: 'GET',
@@ -6,9 +19,10 @@
              }
     });
     let data = await response.json();
+    // console.log("data",data)
      let arr = data.photos
         data.photos.forEach(el => {
-            console.log(el);
+            //  console.log(el);
             let imga = document.createElement('img');
             imga.src = el.src.large;
             imga.style.width="98%"  
@@ -25,16 +39,4 @@
             container.append(div)
         });
 }
-    Names()
-window.onscroll = function () { myFunction() };
-
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
+Names()
